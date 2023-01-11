@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.aboutMe{
+    height: auto;
+    background: linear-gradient(180deg,  rgb(39, 37, 37) 0%, rgb(122, 122, 122) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    color: white;
+}
+
+.aboutMe > *{
+    width: 40%;
+}
+
+.aboutImage{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.aboutDesc h5{
+    font-family: 'Pacifico', cursive;
+    color:rgb(192, 190, 190);
+}
+
+.aboutDesc h1{
+    font-family: 'Lobster', cursive;
+    margin-bottom: 10px;
+}
+
+.downloadBtn {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: din-round,sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .4px;
+  line-height: 20px;
+  margin-top: 25px;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.downloadBtn:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.downloadBtn:main,
+.downloadBtn:focus {
+  user-select: auto;
+}
+
+.downloadBtn:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.downloadBtn:disabled {
+  cursor: auto;
+}
+
+
+
+@media only screen and (max-width: 992px){
+    .aboutMe{
+        position: relative;
+        flex-direction: column-reverse;
+        padding: 60px 10%;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    
+    .aboutMe > *{
+        width: 100%;
+    }
+    
+    .aboutImage{
+        position: absolute;
+        top: 15%;
+        width: 100px;
+        right: 10%;
+    }
+
+    .aboutDesc{
+        margin-top: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    .downloadBtn {
+        border-radius: 12px;
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 25px;
+        padding: 9px 12px;
+      }
+
+      .aboutMe{
+        padding: 40px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

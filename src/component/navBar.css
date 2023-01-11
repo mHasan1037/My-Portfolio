@@ -5,6 +5,15 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: black;
+    padding: 15px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: 0.3s ease-in;
+}
+
+nav.active{
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 10px;
 }
 
@@ -51,7 +60,7 @@ nav .active{
     .navMenu{
         position: absolute;
         left: -105%;
-        top: 63px;
+        top: 62px;
         width: 100%;
         height: 90vh;
         background-color: rgba(0, 0, 0, 0.9);
@@ -69,7 +78,32 @@ nav .active{
     .navLink{
         margin: 16px 0;
         font-size: 1.5rem;
+        /* transition-delay: 0.4s; */
     }
+
+    
+    .navMenu.active .navLink{
+        animation: rotate 0.5s linear;
+    }
+
+    @keyframes rotate {
+        0%{
+            transform: scale(0);
+        }
+        25%{
+            transform: scale(0.25);
+        }
+        50%{
+            transform: scale(0.5);
+        }
+        75%{
+            transform: scale(0.75);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
 
     .nav-social-link{
         display: block;
