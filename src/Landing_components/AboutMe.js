@@ -1,8 +1,17 @@
 import React from 'react'
 import style from '../Landing_components/aboutMe.module.css'
 import aboutImg from '../Assets/man.png'
+import { useNavigate } from 'react-router-dom'
+import Button from './Button'
 
 const AboutMe = () => {
+  const navigate = useNavigate() 
+
+  const changePage = () =>{
+     let path = "About"
+     navigate(path)
+  }
+
   return (
     <div className={style.aboutMe}>
         <div>
@@ -11,10 +20,12 @@ const AboutMe = () => {
         <div className={style.aboutDesc}>
            <h5>Who Am I?</h5>
            <h1>About Me</h1>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid ad provident aut fuga animi soluta quae eos non cupiditate voluptates dolorem, doloremque quos dicta quibusdam impedit iure nemo a iste</p>
+           <p>My name is Mahmudul Hasan. I am a front-end developer based in Dhaka, Bangladesh. I have developed many types of front-ends from Ecommerce websites to different applications</p>
            <br/>
-           <p>culpa! Quasi quibusdam hic recusandae delectus velit officiis explicabo voluptatibus! Nemo esse similique, voluptates labore distinctio, placeat explicabo facilis molestias, blanditiis culpa iusto voluptatem ratione eligendi a, quia temporibus velit vero ipsa sint ex voluptatum expedita aliquid! Debitis, nam!</p>
-           <button className={style.downloadBtn} role="button">Download CV</button>
+           <p>I am passionate about cutting-edge, pixel-perfect, beautiful interfaces and intuitively implemented UX.</p>
+           {
+            <Button changePage={changePage} buttonText="Read More" />
+           }
         </div>
     </div>
   )

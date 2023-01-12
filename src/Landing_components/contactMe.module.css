@@ -1,0 +1,24 @@
+.contactContainer{
+    width: 100%;
+    background-color: white;
+    margin-top: 100px;
+}
+
+.heading{
+    text-align: center;
+    margin: 0 auto;
+}
+.heading h5{
+    font-family: 'Pacifico', cursive;
+    color:rgb(92, 89, 89);
+    font-size: 16px;
+}
+.heading h1{
+    font-family: 'Lobster', cursive;
+    margin-bottom: 15px;
+    color: rgb(77, 70, 70);
+}
+
+.form{
+    text-align: center;
+}
