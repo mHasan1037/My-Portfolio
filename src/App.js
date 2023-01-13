@@ -9,7 +9,7 @@ import Contact from './component/Contact';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/My-Portfolio'>
         <NavBar />
         <Routes>
            <Route path="/" exact element={ <HeroSection />} />
