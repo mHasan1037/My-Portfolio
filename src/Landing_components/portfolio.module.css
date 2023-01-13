@@ -1,6 +1,5 @@
 .portContainer{
     background: linear-gradient(180deg, rgb(231, 231, 231) 0%, rgb(255, 255, 255) 100%);
-    height: 500px;
     padding: 100px 0 50px;
     width: 100%;
 }
@@ -114,5 +113,14 @@
     .portElem{
         width: 200px;
         height: 150px;
+    }
+
+    .title{
+        padding-top: 20px;
+        font-size: 16px;
+    }
+
+    .technology{
+        font-size: 12px;
     }
 }
