@@ -2,13 +2,12 @@ import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { BiMenuAltRight } from 'react-icons/bi'
 import { RxCross2 } from 'react-icons/rx'
-import { AiFillTwitterSquare, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { AiFillTwitterSquare, AiFillGithub, AiFillLinkedin, AiOutlineDownload } from 'react-icons/ai'
 import './navBar.css'
 
 const NavBar = () => {
    const [active, setActive] = useState(false)
    const [navbar, setNavbar] = useState(false)
-   const [file, setFile] = useState(null)
 
    const handleActive = () => setActive(!active)
    const closeMobileMenu = () => setActive(false)
@@ -23,21 +22,7 @@ const NavBar = () => {
 
    window.addEventListener('scroll', changeBackground)
 
-   const handleDownload = () =>{
-      const blob = new Blob([file], {type: "application/pdf"}); 
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a")
-      a.href = url;
-      a.download = "MahmudulHasan.pdf";
-      a.click();
-      URL.revokeObjectURL(url)
-   }
 
-   useEffect(()=>{
-      fetch('../MahmudulHasan.pdf')
-      .then(res => res.blob())
-      .then(blob => setFile(blob))
-   },[])
   
   return (
     <>
@@ -49,7 +34,12 @@ const NavBar = () => {
             <NavLink to="/projects" className="navLink" onClick={closeMobileMenu}>Projects</NavLink>
             <NavLink to="/testimonial" className="navLink" onClick={closeMobileMenu}>Testimonial</NavLink>
             <NavLink to="/contact" className="navLink" onClick={closeMobileMenu}>Contact</NavLink> 
-            <button onClick={handleDownload}>Resume</button> 
+            
+            <a href='./Mahmudul_Hasan.pdf' className='resume-btn' download="Mahmudul_Hasan.pdf">
+              Resume
+              <AiOutlineDownload />
+            </a>
+            
 
             <div className='nav-social-link'>
                 <a target='_blank' onClick={closeMobileMenu} href='https://www.linkedin.com/in/front-end-webdeveloper/'><AiFillLinkedin /></a>
