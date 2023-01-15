@@ -1,0 +1,22 @@
+.container{
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social a{
+   color: black;
+   margin: 0 5px;
+   font-size: 25px;
+}
+
+@media only screen and (max-width: 500px){
+    .container{
+        flex-direction: column-reverse;
+        gap: 5px;
+        padding: 40px 0;
+    }
+}

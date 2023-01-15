@@ -6,6 +6,7 @@ import Skills from '../Landing_components/Skills'
 import { useNavigate } from 'react-router-dom'
 import Portfolio from '../Landing_components/Portfolio'
 import ContactMe from '../Landing_components/ContactMe'
+import Footer from './Footer'
 
 const HeroSection = () => {
 
@@ -37,6 +38,7 @@ const HeroSection = () => {
             <Skills />
             <Portfolio />
             <ContactMe />
+            <Footer />
         </>
       }
     </>

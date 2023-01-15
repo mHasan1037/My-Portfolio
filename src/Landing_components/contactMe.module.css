@@ -2,6 +2,7 @@
     width: 100%;
     background-color: white;
     margin-top: 80px;
+    margin-bottom: 100px;
 }
 
 .heading{
@@ -21,4 +22,30 @@
 
 .form{
     text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.formControl{
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.formControl input{
+    width: 50%; 
+}
+
+.form textarea{
+    width: 100%;
+    min-height: 150px;
+}
+
+.formControl input,
+.form textarea{
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
 }

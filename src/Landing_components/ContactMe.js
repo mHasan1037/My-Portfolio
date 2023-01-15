@@ -34,7 +34,7 @@ const ContactMe = () => {
                 <input type="text" value={name} onChange={(e)=> setName(e.target.value)} name="to_name" placeholder="Your Name" required/>
                 <input type="email" value={email} onChange={(e)=> setEmail(e.target.value)} name="from_name" placeholder="Your Email" required/>
             </div>
-            <textarea name="message" value={message} onChange={(e)=> setMessage(e.target.value)} required/>
+            <textarea name="message" value={message} onChange={(e)=> setMessage(e.target.value)} placeholder="Message" required/>
             {
                 <Button type="submit" value="Send" buttonText="Send Message" display="block" margin="20px auto" />
             }
