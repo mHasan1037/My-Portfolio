@@ -28,7 +28,7 @@ const NavBar = () => {
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a")
       a.href = url;
-      a.download = "Mahmudul Hasan.pdf";
+      a.download = "MahmudulHasan.pdf";
       a.click();
       URL.revokeObjectURL(url)
    }
