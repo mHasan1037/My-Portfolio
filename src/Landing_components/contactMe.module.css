@@ -49,3 +49,13 @@
     border-radius: 5px;
     border: 1px solid gray;
 }
+
+
+@media only screen and (max-width: 768px){
+    .formControl{
+        flex-direction: column;
+    }
+    .formControl input{
+        width: 100%; 
+    }
+}

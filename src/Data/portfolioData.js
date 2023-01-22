@@ -9,11 +9,11 @@ const portfolioData = [
     },
     {
         id: 2,
-        name: 'Construction website',
-        webLink: 'https://mhasan1037.github.io/Construction-Website/',
-        codeLink: 'https://github.com/mHasan1037/Construction-Website',
-        img: require('../Image/port2.JPG'),
-        techs: ["HTML", "CSS", "JS"]
+        name: 'Expense-Tracker',
+        webLink: 'https://mhasan1037.github.io/expense-tracker/',
+        codeLink: 'https://github.com/mHasan1037/expense-tracker',
+        img: require('../Image/expense-tracker.JPG'),
+        techs: ["React JS"]
     },
     {
         id: 3,
