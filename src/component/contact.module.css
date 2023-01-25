@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.contactContainer{
+   width: 100%;
+   padding: 30px 0 0;
+}
+
+.headline{
+    text-align: center;
+}
+
+.headline h1{
+    font-family: 'Lobster', cursive;
+}
+
+.headline p{
+    color: gray;
+}
+
+.socialContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 60vw;
+    margin: 60px auto;
+}
+
+.iconBox{
+    width: 150px;
+    text-align: center;
+}
+
+.iconBox p{
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.icon{
+    background-color: rgb(199, 197, 197);
+    color: white;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.address{
+    color: rgb(46, 45, 45);
+}

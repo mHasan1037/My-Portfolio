@@ -15,7 +15,7 @@ const Portfolio = () => {
   return (
     <div className={style.portContainer}>
         <div className={style.heading}>
-           <h5>What is my strength?</h5>
+           <h5>What I Did?</h5>
            <h1>Portfolio</h1>
         </div>
 

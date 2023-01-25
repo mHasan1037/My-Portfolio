@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import style from '../Landing_components/contactMe.module.css'
 import Button from './Button'
 
-const ContactMe = () => {
+const ContactMe = ({question, headline}) => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
@@ -25,8 +25,8 @@ const ContactMe = () => {
   return (
     <div className={style.contactContainer}>
         <div className={style.heading}>
-           <h5>How can you communicate?</h5>
-           <h1>Contact Me</h1>
+           <h5>{question}</h5>
+           <h1>{headline}</h1>
         </div>
 
         <form className={style.form} ref={form} onSubmit={sendEmail} >

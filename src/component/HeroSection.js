@@ -37,7 +37,7 @@ const HeroSection = () => {
             <AboutMe />
             <Skills />
             <Portfolio />
-            <ContactMe />
+            <ContactMe question="How can you communicate?" headline="Contact Me" />
             <Footer />
         </>
       }
