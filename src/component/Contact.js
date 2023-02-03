@@ -52,7 +52,6 @@ const Contact = () => {
          <div style={{marginTop: '160px'}}>
              <ContactMe headline="Message Me" />
          </div>
-         <Footer />
     </div>
   )
 }

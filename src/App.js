@@ -6,6 +6,7 @@ import NavBar from './component/NavBar';
 import Projects from './component/Projects';
 import Testimonial from './component/Testimonial';
 import Contact from './component/Contact';
+import Footer from './component/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
            <Route path="/contact" element={ <Contact /> } />
            <Route path="*" element={<Navigate to="/" />} />
         </Routes>
+        <Footer />
     </BrowserRouter>
   );
 }
