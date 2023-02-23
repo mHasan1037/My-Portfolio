@@ -11,6 +11,7 @@ const Portfolio = () => {
     const changePage = () =>{
         let path = "Projects"
         navigate(path)
+        window.scrollTo(0, 0)
     }
   return (
     <div className={style.portContainer}>

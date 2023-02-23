@@ -14,6 +14,7 @@ const HeroSection = () => {
   const routeChange = () =>{
       let path = "contact";
       navigate(path)
+      window.scrollTo(0, 0)
   }
 
   return (

@@ -30,9 +30,9 @@ const NavBar = () => {
         <NavLink to="/" className="logo">Portfolio.</NavLink>
         <ul className={active ? 'navMenu active' : 'navMenu'}>
             <NavLink to="/herosection" className="navLink" onClick={closeMobileMenu}>Home</NavLink>
-            <NavLink to="/about" className="navLink" onClick={closeMobileMenu}>About</NavLink>
+            {/* <NavLink to="/about" className="navLink" onClick={closeMobileMenu}>About</NavLink> */}
             <NavLink to="/projects" className="navLink" onClick={closeMobileMenu}>Projects</NavLink>
-            <NavLink to="/testimonial" className="navLink" onClick={closeMobileMenu}>Testimonial</NavLink>
+            {/* <NavLink to="/testimonial" className="navLink" onClick={closeMobileMenu}>Testimonial</NavLink> */}
             <NavLink to="/contact" className="navLink" onClick={closeMobileMenu}>Contact</NavLink> 
             
             <a href='./Mahmudul_Hasan.pdf' className='resume-btn' download="Mahmudul_Hasan.pdf">
