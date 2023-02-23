@@ -21,7 +21,7 @@ const Portfolio = () => {
 
        <div className={style.details}>
             {
-                portfolioData.slice(0, 3).map((port)=>{
+                portfolioData.filter((_, index)=> [0, 4, 3].includes(index)).map((port)=>{
                     const {id, name, webLink, codeLink, img, techs} = port
                     return (
                         <div className={style.portElem} key={id}>
