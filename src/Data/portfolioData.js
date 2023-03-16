@@ -61,6 +61,15 @@ const portfolioData = [
         codeLink: 'https://github.com/mHasan1037/Figma-to-HTML-1',
         img: require('../Image/OXPAY.JPG'),
         techs: ['HTML', 'CSS', 'JS']
+    },
+    {
+        id: 8,
+        type: 'react',
+        name: 'React Dashboard',
+        webLink: 'https://mhasan1037.github.io/react-dashboard/',
+        codeLink: 'https://github.com/mHasan1037/react-dashboard',
+        img: require('../Image/dashboard.png'),
+        techs: ['React JS']
     }
 ]
 

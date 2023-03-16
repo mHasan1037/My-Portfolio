@@ -22,7 +22,7 @@ const Portfolio = () => {
 
        <div className={style.details}>
             {
-                portfolioData.filter((_, index)=> [0, 4, 3].includes(index)).map((port)=>{
+                portfolioData.filter((_, index)=> [0, 3, 7].includes(index)).map((port)=>{
                     const {id, name, webLink, codeLink, img, techs} = port
                     return (
                         <div className={style.portElem} key={id}>
