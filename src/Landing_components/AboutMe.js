@@ -25,7 +25,7 @@ const AboutMe = () => {
            <br/>
            <p>I am passionate about cutting-edge, pixel-perfect, beautiful interfaces and intuitively implemented UX.</p>
            {
-            <Button changePage={changePage} buttonText="Read More" />
+            //<Button changePage={changePage} buttonText="Read More" />
            }
         </div>
     </div>
